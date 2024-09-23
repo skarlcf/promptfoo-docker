@@ -1,0 +1,1676 @@
+{
+  "id": "eval-2024-09-23T08:09:37",
+  "createdAt": 1727078977448,
+  "description": "Translate journalist role",
+  "results": {
+    "version": 2,
+    "timestamp": "2024-09-23T08:09:37.448Z",
+    "results": [
+      {
+        "provider": {
+          "id": "ollama:completion:llama3.1:8b-instruct-q6_K"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"Reporter\" to Spanish, French, German and Polish languages based on this role description: Gathers information, conducts interviews, and writes news stories to inform the public on current events. Reporter works in Media Outlet in Newspapers\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "Reporter",
+          "role_description": "Gathers information, conducts interviews, and writes news stories to inform the public on current events.",
+          "industry_sector": "Newspapers"
+        },
+        "response": {
+          "output": "```\n{\n  \"english\": \"reporter\",\n  \"spanish\": \"periodista\",\n  \"french\": \"journaliste\",\n  \"german\": \"Journalist\",\n  \"polish\": \"reportażysta\"\n}\n```"
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 4,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "ollama:completion:mistral-nemo:12b-instruct-2407-q6_K"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"Reporter\" to Spanish, French, German and Polish languages based on this role description: Gathers information, conducts interviews, and writes news stories to inform the public on current events. Reporter works in Media Outlet in Newspapers\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "Reporter",
+          "role_description": "Gathers information, conducts interviews, and writes news stories to inform the public on current events.",
+          "industry_sector": "Newspapers"
+        },
+        "response": {
+          "output": "```json\n{\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reportażysta\"\n}\n```"
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 25,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:chat:gpt-4o-mini"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"Reporter\" to Spanish, French, German and Polish languages based on this role description: Gathers information, conducts interviews, and writes news stories to inform the public on current events. Reporter works in Media Outlet in Newspapers\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "Reporter",
+          "role_description": "Gathers information, conducts interviews, and writes news stories to inform the public on current events.",
+          "industry_sector": "Newspapers"
+        },
+        "response": {
+          "output": "```json\n{\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n}\n```",
+          "tokenUsage": {
+            "cached": 188,
+            "total": 188
+          },
+          "cached": true,
+          "cost": 0.00005025
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 3,
+        "cost": 0.00005025,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:chat:gpt-4o-2024-08-06"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"Reporter\" to Spanish, French, German and Polish languages based on this role description: Gathers information, conducts interviews, and writes news stories to inform the public on current events. Reporter works in Media Outlet in Newspapers\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "Reporter",
+          "role_description": "Gathers information, conducts interviews, and writes news stories to inform the public on current events.",
+          "industry_sector": "Newspapers"
+        },
+        "response": {
+          "output": "```json\n{\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n}\n```",
+          "tokenUsage": {
+            "cached": 188,
+            "total": 188
+          },
+          "cached": true
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 3,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "ollama:completion:llama3.1:8b-instruct-q6_K"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"News Anchor\" to Spanish, French, German and Polish languages based on this role description: Presents the news during broadcast segments. News Anchor works in Media Outlet in Television\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "News Anchor",
+          "role_description": "Presents the news during broadcast segments.",
+          "industry_sector": "Television"
+        },
+        "response": {
+          "output": "```\n{\n  \"english\": \"News Anchor\",\n  \"spanish\": \"Locutor de Noticias\",\n  \"french\": \"Anchorman d'Actualités\",\n  \"german\": \"Nachrichtensprecher\",\n  \"polish\": \"Komentator Wiadomości\"\n}\n```"
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 3,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "ollama:completion:mistral-nemo:12b-instruct-2407-q6_K"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"News Anchor\" to Spanish, French, German and Polish languages based on this role description: Presents the news during broadcast segments. News Anchor works in Media Outlet in Television\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "News Anchor",
+          "role_description": "Presents the news during broadcast segments.",
+          "industry_sector": "Television"
+        },
+        "response": {
+          "output": "```json\n{\n  \"english\": \"News Anchor\",\n  \"spanish\": \"Presentador de Noticias\",\n  \"french\": \"Présentateur de nouvelles\",\n  \"german\": \"Nachrichtensprecher\",\n  \"polish\": \"Prezenter wiadomości\"\n}\n```"
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 3,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:chat:gpt-4o-mini"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"News Anchor\" to Spanish, French, German and Polish languages based on this role description: Presents the news during broadcast segments. News Anchor works in Media Outlet in Television\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "News Anchor",
+          "role_description": "Presents the news during broadcast segments.",
+          "industry_sector": "Television"
+        },
+        "response": {
+          "output": "```json\n{\n  \"english\": \"News Anchor\",\n  \"spanish\": \"Presentador de noticias\",\n  \"french\": \"Présentateur de nouvelles\",\n  \"german\": \"Nachrichtensprecher\",\n  \"polish\": \"Prezenter wiadomości\"\n}\n```",
+          "tokenUsage": {
+            "cached": 189,
+            "total": 189
+          },
+          "cached": true,
+          "cost": 0.000055350000000000004
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 1,
+        "cost": 0.000055350000000000004,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:chat:gpt-4o-2024-08-06"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"News Anchor\" to Spanish, French, German and Polish languages based on this role description: Presents the news during broadcast segments. News Anchor works in Media Outlet in Television\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "News Anchor",
+          "role_description": "Presents the news during broadcast segments.",
+          "industry_sector": "Television"
+        },
+        "response": {
+          "output": "```json\n{\n  \"english\": \"news anchor\",\n  \"spanish\": \"presentador de noticias\",\n  \"french\": \"présentateur de nouvelles\",\n  \"german\": \"Nachrichtensprecher\",\n  \"polish\": \"prezenter wiadomości\"\n}\n```",
+          "tokenUsage": {
+            "cached": 190,
+            "total": 190
+          },
+          "cached": true
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 3,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "ollama:completion:llama3.1:8b-instruct-q6_K"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"Correspondent\" to Spanish, French, German and Polish languages based on this role description: Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station. Correspondent works in Media Outlet in Radio\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "Correspondent",
+          "role_description": "Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station.",
+          "industry_sector": "Radio"
+        },
+        "response": {
+          "output": "```\n{\n  \"english\": \"Correspondent\",\n  \"spanish\": \"Corresponsal\",\n  \"french\": \"Correspondant\",\n  \"german\": \"Korrespondent\",\n  \"polish\": \"Korespondent\"\n}\n```"
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 2,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "ollama:completion:mistral-nemo:12b-instruct-2407-q6_K"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"Correspondent\" to Spanish, French, German and Polish languages based on this role description: Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station. Correspondent works in Media Outlet in Radio\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "Correspondent",
+          "role_description": "Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station.",
+          "industry_sector": "Radio"
+        },
+        "response": {
+          "output": "```json\n{\n  \"english\": \"correspondent\",\n  \"spanish\": \"corresponsal\",\n  \"french\": \"correspondant\",\n  \"german\": \"Korrespondent\",\n  \"polish\": \"korespondent\"\n}\n```"
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 2,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:chat:gpt-4o-mini"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"Correspondent\" to Spanish, French, German and Polish languages based on this role description: Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station. Correspondent works in Media Outlet in Radio\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "Correspondent",
+          "role_description": "Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station.",
+          "industry_sector": "Radio"
+        },
+        "response": {
+          "output": "```json\n{\n  \"english\": \"correspondent\",\n  \"spanish\": \"corresponsal\",\n  \"french\": \"correspondant\",\n  \"german\": \"Korrespondent\",\n  \"polish\": \"korespondent\"\n}\n```",
+          "tokenUsage": {
+            "cached": 204,
+            "total": 204
+          },
+          "cached": true,
+          "cost": 0.00005534999999999999
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 2,
+        "cost": 0.00005534999999999999,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:chat:gpt-4o-2024-08-06"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"Correspondent\" to Spanish, French, German and Polish languages based on this role description: Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station. Correspondent works in Media Outlet in Radio\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "Correspondent",
+          "role_description": "Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station.",
+          "industry_sector": "Radio"
+        },
+        "response": {
+          "output": "```json\n{\n  \"english\": \"correspondent\",\n  \"spanish\": \"corresponsal\",\n  \"french\": \"correspondant\",\n  \"german\": \"Korrespondent\",\n  \"polish\": \"korespondent\"\n}\n```",
+          "tokenUsage": {
+            "cached": 204,
+            "total": 204
+          },
+          "cached": true
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 2,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "ollama:completion:llama3.1:8b-instruct-q6_K"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"Investigative Journalist\" to Spanish, French, German and Polish languages based on this role description: Conducts in-depth investigations for magazine exclusives. Investigative Journalist works in Media Outlet in Magazines/Publishing\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "Investigative Journalist",
+          "role_description": "Conducts in-depth investigations for magazine exclusives.",
+          "industry_sector": "Magazines/Publishing"
+        },
+        "response": {
+          "output": "```\n{\n  \"english\": \"Investigative Journalist\",\n  \"spanish\": \"Periodista Investigativo\",\n  \"french\": \"Journaliste d'investigation\",\n  \"german\": \"Ermittlender Journalist\",\n  \"polish\": \"Dziennikarz śledczy\"\n}\n```"
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 2,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "ollama:completion:mistral-nemo:12b-instruct-2407-q6_K"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"Investigative Journalist\" to Spanish, French, German and Polish languages based on this role description: Conducts in-depth investigations for magazine exclusives. Investigative Journalist works in Media Outlet in Magazines/Publishing\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "Investigative Journalist",
+          "role_description": "Conducts in-depth investigations for magazine exclusives.",
+          "industry_sector": "Magazines/Publishing"
+        },
+        "response": {
+          "output": "```json\n{\n  \"english\": \"Investigative Journalist\",\n  \"spanish\": \"Periodista de Investigación\",\n  \"french\": \"Journaliste d'investigation\",\n  \"german\": \"Investigativjournalist\",\n  \"polish\": \"Reporter śledczy\"\n}\n```"
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 3,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:chat:gpt-4o-mini"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"Investigative Journalist\" to Spanish, French, German and Polish languages based on this role description: Conducts in-depth investigations for magazine exclusives. Investigative Journalist works in Media Outlet in Magazines/Publishing\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "Investigative Journalist",
+          "role_description": "Conducts in-depth investigations for magazine exclusives.",
+          "industry_sector": "Magazines/Publishing"
+        },
+        "response": {
+          "output": "```json\n{\n  \"english\": \"Investigative Journalist\",\n  \"spanish\": \"Periodista de Investigación\",\n  \"french\": \"Journaliste d'Investigation\",\n  \"german\": \"Investigativer Journalist\",\n  \"polish\": \"Dziennikarz Śledczy\"\n}\n```",
+          "tokenUsage": {
+            "cached": 200,
+            "total": 200
+          },
+          "cached": true,
+          "cost": 0.000058349999999999995
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 2,
+        "cost": 0.000058349999999999995,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      },
+      {
+        "provider": {
+          "id": "openai:chat:gpt-4o-2024-08-06"
+        },
+        "prompt": {
+          "raw": "Translate professional role from English \"Investigative Journalist\" to Spanish, French, German and Polish languages based on this role description: Conducts in-depth investigations for magazine exclusives. Investigative Journalist works in Media Outlet in Magazines/Publishing\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+          "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+        },
+        "vars": {
+          "role_name": "Investigative Journalist",
+          "role_description": "Conducts in-depth investigations for magazine exclusives.",
+          "industry_sector": "Magazines/Publishing"
+        },
+        "response": {
+          "output": "```json\n{\n  \"english\": \"Investigative Journalist\",\n  \"spanish\": \"Periodista de Investigación\",\n  \"french\": \"Journaliste d'Investigation\",\n  \"german\": \"Investigativer Journalist\",\n  \"polish\": \"Dziennikarz Śledczy\"\n}\n```",
+          "tokenUsage": {
+            "cached": 200,
+            "total": 200
+          },
+          "cached": true
+        },
+        "success": true,
+        "score": 1,
+        "namedScores": {},
+        "latencyMs": 1,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            }
+          ],
+          "assertion": null
+        }
+      }
+    ],
+    "stats": {
+      "successes": 16,
+      "failures": 0,
+      "tokenUsage": {
+        "total": 1563,
+        "prompt": 0,
+        "completion": 0,
+        "cached": 1563
+      }
+    },
+    "table": {
+      "head": {
+        "prompts": [
+          {
+            "raw": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+            "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+            "id": "a4e29cb201d229ce3c415f4ed60b6b04a7ceebaa188a966b3e5cb35bcc1fc192",
+            "provider": "ollama:completion:llama3.1:8b-instruct-q6_K",
+            "metrics": {
+              "score": 4,
+              "testPassCount": 4,
+              "testFailCount": 0,
+              "assertPassCount": 4,
+              "assertFailCount": 0,
+              "totalLatencyMs": 11,
+              "tokenUsage": {
+                "total": 0,
+                "prompt": 0,
+                "completion": 0,
+                "cached": 0
+              },
+              "namedScores": {},
+              "namedScoresCount": {},
+              "cost": 0
+            }
+          },
+          {
+            "raw": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+            "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+            "id": "a4e29cb201d229ce3c415f4ed60b6b04a7ceebaa188a966b3e5cb35bcc1fc192",
+            "provider": "ollama:completion:mistral-nemo:12b-instruct-2407-q6_K",
+            "metrics": {
+              "score": 4,
+              "testPassCount": 4,
+              "testFailCount": 0,
+              "assertPassCount": 4,
+              "assertFailCount": 0,
+              "totalLatencyMs": 33,
+              "tokenUsage": {
+                "total": 0,
+                "prompt": 0,
+                "completion": 0,
+                "cached": 0
+              },
+              "namedScores": {},
+              "namedScoresCount": {},
+              "cost": 0
+            }
+          },
+          {
+            "raw": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+            "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+            "id": "a4e29cb201d229ce3c415f4ed60b6b04a7ceebaa188a966b3e5cb35bcc1fc192",
+            "provider": "openai:chat:gpt-4o-mini",
+            "metrics": {
+              "score": 4,
+              "testPassCount": 4,
+              "testFailCount": 0,
+              "assertPassCount": 4,
+              "assertFailCount": 0,
+              "totalLatencyMs": 8,
+              "tokenUsage": {
+                "total": 781,
+                "prompt": 0,
+                "completion": 0,
+                "cached": 781
+              },
+              "namedScores": {},
+              "namedScoresCount": {},
+              "cost": 0.00021929999999999996
+            }
+          },
+          {
+            "raw": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+            "label": "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+            "id": "a4e29cb201d229ce3c415f4ed60b6b04a7ceebaa188a966b3e5cb35bcc1fc192",
+            "provider": "openai:chat:gpt-4o-2024-08-06",
+            "metrics": {
+              "score": 4,
+              "testPassCount": 4,
+              "testFailCount": 0,
+              "assertPassCount": 4,
+              "assertFailCount": 0,
+              "totalLatencyMs": 9,
+              "tokenUsage": {
+                "total": 782,
+                "prompt": 0,
+                "completion": 0,
+                "cached": 782
+              },
+              "namedScores": {},
+              "namedScoresCount": {},
+              "cost": 0
+            }
+          }
+        ],
+        "vars": [
+          "industry_sector",
+          "role_description",
+          "role_name"
+        ]
+      },
+      "body": [
+        {
+          "description": "",
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```\n{\n  \"english\": \"reporter\",\n  \"spanish\": \"periodista\",\n  \"french\": \"journaliste\",\n  \"german\": \"Journalist\",\n  \"polish\": \"reportażysta\"\n}\n```",
+              "prompt": "Translate professional role from English \"Reporter\" to Spanish, French, German and Polish languages based on this role description: Gathers information, conducts interviews, and writes news stories to inform the public on current events. Reporter works in Media Outlet in Newspapers\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "ollama:completion:llama3.1:8b-instruct-q6_K",
+              "latencyMs": 4,
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```json\n{\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reportażysta\"\n}\n```",
+              "prompt": "Translate professional role from English \"Reporter\" to Spanish, French, German and Polish languages based on this role description: Gathers information, conducts interviews, and writes news stories to inform the public on current events. Reporter works in Media Outlet in Newspapers\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "ollama:completion:mistral-nemo:12b-instruct-2407-q6_K",
+              "latencyMs": 25,
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```json\n{\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n}\n```",
+              "prompt": "Translate professional role from English \"Reporter\" to Spanish, French, German and Polish languages based on this role description: Gathers information, conducts interviews, and writes news stories to inform the public on current events. Reporter works in Media Outlet in Newspapers\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "openai:chat:gpt-4o-mini",
+              "latencyMs": 3,
+              "tokenUsage": {
+                "cached": 188,
+                "total": 188
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.00005025
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```json\n{\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n}\n```",
+              "prompt": "Translate professional role from English \"Reporter\" to Spanish, French, German and Polish languages based on this role description: Gathers information, conducts interviews, and writes news stories to inform the public on current events. Reporter works in Media Outlet in Newspapers\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "openai:chat:gpt-4o-2024-08-06",
+              "latencyMs": 3,
+              "tokenUsage": {
+                "cached": 188,
+                "total": 188
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0
+            }
+          ],
+          "test": {
+            "description": "",
+            "vars": {
+              "role_name": "Reporter",
+              "role_description": "Gathers information, conducts interviews, and writes news stories to inform the public on current events.",
+              "industry_sector": "Newspapers"
+            },
+            "assert": [
+              {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            ],
+            "options": {},
+            "metadata": {}
+          },
+          "vars": [
+            "Newspapers",
+            "Gathers information, conducts interviews, and writes news stories to inform the public on current events.",
+            "Reporter"
+          ]
+        },
+        {
+          "description": "",
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```\n{\n  \"english\": \"News Anchor\",\n  \"spanish\": \"Locutor de Noticias\",\n  \"french\": \"Anchorman d'Actualités\",\n  \"german\": \"Nachrichtensprecher\",\n  \"polish\": \"Komentator Wiadomości\"\n}\n```",
+              "prompt": "Translate professional role from English \"News Anchor\" to Spanish, French, German and Polish languages based on this role description: Presents the news during broadcast segments. News Anchor works in Media Outlet in Television\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "ollama:completion:llama3.1:8b-instruct-q6_K",
+              "latencyMs": 3,
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```json\n{\n  \"english\": \"News Anchor\",\n  \"spanish\": \"Presentador de Noticias\",\n  \"french\": \"Présentateur de nouvelles\",\n  \"german\": \"Nachrichtensprecher\",\n  \"polish\": \"Prezenter wiadomości\"\n}\n```",
+              "prompt": "Translate professional role from English \"News Anchor\" to Spanish, French, German and Polish languages based on this role description: Presents the news during broadcast segments. News Anchor works in Media Outlet in Television\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "ollama:completion:mistral-nemo:12b-instruct-2407-q6_K",
+              "latencyMs": 3,
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```json\n{\n  \"english\": \"News Anchor\",\n  \"spanish\": \"Presentador de noticias\",\n  \"french\": \"Présentateur de nouvelles\",\n  \"german\": \"Nachrichtensprecher\",\n  \"polish\": \"Prezenter wiadomości\"\n}\n```",
+              "prompt": "Translate professional role from English \"News Anchor\" to Spanish, French, German and Polish languages based on this role description: Presents the news during broadcast segments. News Anchor works in Media Outlet in Television\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "openai:chat:gpt-4o-mini",
+              "latencyMs": 1,
+              "tokenUsage": {
+                "cached": 189,
+                "total": 189
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.000055350000000000004
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```json\n{\n  \"english\": \"news anchor\",\n  \"spanish\": \"presentador de noticias\",\n  \"french\": \"présentateur de nouvelles\",\n  \"german\": \"Nachrichtensprecher\",\n  \"polish\": \"prezenter wiadomości\"\n}\n```",
+              "prompt": "Translate professional role from English \"News Anchor\" to Spanish, French, German and Polish languages based on this role description: Presents the news during broadcast segments. News Anchor works in Media Outlet in Television\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "openai:chat:gpt-4o-2024-08-06",
+              "latencyMs": 3,
+              "tokenUsage": {
+                "cached": 190,
+                "total": 190
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0
+            }
+          ],
+          "test": {
+            "description": "",
+            "vars": {
+              "role_name": "News Anchor",
+              "role_description": "Presents the news during broadcast segments.",
+              "industry_sector": "Television"
+            },
+            "assert": [
+              {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            ],
+            "options": {},
+            "metadata": {}
+          },
+          "vars": [
+            "Television",
+            "Presents the news during broadcast segments.",
+            "News Anchor"
+          ]
+        },
+        {
+          "description": "",
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```\n{\n  \"english\": \"Correspondent\",\n  \"spanish\": \"Corresponsal\",\n  \"french\": \"Correspondant\",\n  \"german\": \"Korrespondent\",\n  \"polish\": \"Korespondent\"\n}\n```",
+              "prompt": "Translate professional role from English \"Correspondent\" to Spanish, French, German and Polish languages based on this role description: Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station. Correspondent works in Media Outlet in Radio\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "ollama:completion:llama3.1:8b-instruct-q6_K",
+              "latencyMs": 2,
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```json\n{\n  \"english\": \"correspondent\",\n  \"spanish\": \"corresponsal\",\n  \"french\": \"correspondant\",\n  \"german\": \"Korrespondent\",\n  \"polish\": \"korespondent\"\n}\n```",
+              "prompt": "Translate professional role from English \"Correspondent\" to Spanish, French, German and Polish languages based on this role description: Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station. Correspondent works in Media Outlet in Radio\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "ollama:completion:mistral-nemo:12b-instruct-2407-q6_K",
+              "latencyMs": 2,
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```json\n{\n  \"english\": \"correspondent\",\n  \"spanish\": \"corresponsal\",\n  \"french\": \"correspondant\",\n  \"german\": \"Korrespondent\",\n  \"polish\": \"korespondent\"\n}\n```",
+              "prompt": "Translate professional role from English \"Correspondent\" to Spanish, French, German and Polish languages based on this role description: Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station. Correspondent works in Media Outlet in Radio\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "openai:chat:gpt-4o-mini",
+              "latencyMs": 2,
+              "tokenUsage": {
+                "cached": 204,
+                "total": 204
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.00005534999999999999
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```json\n{\n  \"english\": \"correspondent\",\n  \"spanish\": \"corresponsal\",\n  \"french\": \"correspondant\",\n  \"german\": \"Korrespondent\",\n  \"polish\": \"korespondent\"\n}\n```",
+              "prompt": "Translate professional role from English \"Correspondent\" to Spanish, French, German and Polish languages based on this role description: Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station. Correspondent works in Media Outlet in Radio\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "openai:chat:gpt-4o-2024-08-06",
+              "latencyMs": 2,
+              "tokenUsage": {
+                "cached": 204,
+                "total": 204
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0
+            }
+          ],
+          "test": {
+            "description": "",
+            "vars": {
+              "role_name": "Correspondent",
+              "role_description": "Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station.",
+              "industry_sector": "Radio"
+            },
+            "assert": [
+              {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            ],
+            "options": {},
+            "metadata": {}
+          },
+          "vars": [
+            "Radio",
+            "Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station.",
+            "Correspondent"
+          ]
+        },
+        {
+          "description": "",
+          "outputs": [
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```\n{\n  \"english\": \"Investigative Journalist\",\n  \"spanish\": \"Periodista Investigativo\",\n  \"french\": \"Journaliste d'investigation\",\n  \"german\": \"Ermittlender Journalist\",\n  \"polish\": \"Dziennikarz śledczy\"\n}\n```",
+              "prompt": "Translate professional role from English \"Investigative Journalist\" to Spanish, French, German and Polish languages based on this role description: Conducts in-depth investigations for magazine exclusives. Investigative Journalist works in Media Outlet in Magazines/Publishing\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "ollama:completion:llama3.1:8b-instruct-q6_K",
+              "latencyMs": 2,
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```json\n{\n  \"english\": \"Investigative Journalist\",\n  \"spanish\": \"Periodista de Investigación\",\n  \"french\": \"Journaliste d'investigation\",\n  \"german\": \"Investigativjournalist\",\n  \"polish\": \"Reporter śledczy\"\n}\n```",
+              "prompt": "Translate professional role from English \"Investigative Journalist\" to Spanish, French, German and Polish languages based on this role description: Conducts in-depth investigations for magazine exclusives. Investigative Journalist works in Media Outlet in Magazines/Publishing\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "ollama:completion:mistral-nemo:12b-instruct-2407-q6_K",
+              "latencyMs": 3,
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```json\n{\n  \"english\": \"Investigative Journalist\",\n  \"spanish\": \"Periodista de Investigación\",\n  \"french\": \"Journaliste d'Investigation\",\n  \"german\": \"Investigativer Journalist\",\n  \"polish\": \"Dziennikarz Śledczy\"\n}\n```",
+              "prompt": "Translate professional role from English \"Investigative Journalist\" to Spanish, French, German and Polish languages based on this role description: Conducts in-depth investigations for magazine exclusives. Investigative Journalist works in Media Outlet in Magazines/Publishing\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "openai:chat:gpt-4o-mini",
+              "latencyMs": 2,
+              "tokenUsage": {
+                "cached": 200,
+                "total": 200
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0.000058349999999999995
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "namedScores": {},
+              "text": "```json\n{\n  \"english\": \"Investigative Journalist\",\n  \"spanish\": \"Periodista de Investigación\",\n  \"french\": \"Journaliste d'Investigation\",\n  \"german\": \"Investigativer Journalist\",\n  \"polish\": \"Dziennikarz Śledczy\"\n}\n```",
+              "prompt": "Translate professional role from English \"Investigative Journalist\" to Spanish, French, German and Polish languages based on this role description: Conducts in-depth investigations for magazine exclusives. Investigative Journalist works in Media Outlet in Magazines/Publishing\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:",
+              "provider": "openai:chat:gpt-4o-2024-08-06",
+              "latencyMs": 1,
+              "tokenUsage": {
+                "cached": 200,
+                "total": 200
+              },
+              "gradingResult": {
+                "pass": true,
+                "score": 1,
+                "reason": "All assertions passed",
+                "namedScores": {},
+                "tokensUsed": {
+                  "total": 0,
+                  "prompt": 0,
+                  "completion": 0,
+                  "cached": 0
+                },
+                "componentResults": [
+                  {
+                    "pass": true,
+                    "score": 1,
+                    "reason": "Assertion passed",
+                    "assertion": {
+                      "type": "contains-json",
+                      "value": "file://./asserts/expected_json_output.json"
+                    }
+                  }
+                ],
+                "assertion": null
+              },
+              "cost": 0
+            }
+          ],
+          "test": {
+            "description": "",
+            "vars": {
+              "role_name": "Investigative Journalist",
+              "role_description": "Conducts in-depth investigations for magazine exclusives.",
+              "industry_sector": "Magazines/Publishing"
+            },
+            "assert": [
+              {
+                "type": "contains-json",
+                "value": "file://./asserts/expected_json_output.json"
+              }
+            ],
+            "options": {},
+            "metadata": {}
+          },
+          "vars": [
+            "Magazines/Publishing",
+            "Conducts in-depth investigations for magazine exclusives.",
+            "Investigative Journalist"
+          ]
+        }
+      ]
+    }
+  },
+  "config": {
+    "description": "Translate journalist role",
+    "prompts": [
+      "Translate professional role from English \"{{role_name}}\" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}\nReturn only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.\nExample output in JSON format:\n```json {\n  \"english\": \"reporter\",\n  \"spanish\": \"reportero\",\n  \"french\": \"reporter\",\n  \"german\": \"Reporter\",\n  \"polish\": \"reporter\"\n} ```\nOutput:"
+    ],
+    "providers": [
+      {
+        "id": "ollama:completion:llama3.1:8b-instruct-q6_K",
+        "config": {
+          "temperature": 0.2
+        }
+      },
+      {
+        "id": "ollama:completion:mistral-nemo:12b-instruct-2407-q6_K",
+        "config": {
+          "temperature": 0.2
+        }
+      },
+      {
+        "id": "openai:chat:gpt-4o-mini",
+        "config": {
+          "organization": "",
+          "temperature": 0.2,
+          "max_tokens": 1024,
+          "top_p": 1,
+          "frequency_penalty": 0,
+          "presence_penalty": 0
+        }
+      },
+      {
+        "id": "openai:chat:gpt-4o-2024-08-06",
+        "config": {
+          "organization": "",
+          "temperature": 0.2,
+          "max_tokens": 1024,
+          "top_p": 1,
+          "frequency_penalty": 0,
+          "presence_penalty": 0
+        }
+      }
+    ],
+    "tests": [
+      {
+        "description": "",
+        "vars": {
+          "role_name": "Reporter",
+          "role_description": "Gathers information, conducts interviews, and writes news stories to inform the public on current events.",
+          "industry_sector": "Newspapers"
+        },
+        "assert": [
+          {
+            "type": "contains-json",
+            "value": "file://./asserts/expected_json_output.json"
+          }
+        ]
+      },
+      {
+        "description": "",
+        "vars": {
+          "role_name": "News Anchor",
+          "role_description": "Presents the news during broadcast segments.",
+          "industry_sector": "Television"
+        },
+        "assert": [
+          {
+            "type": "contains-json",
+            "value": "file://./asserts/expected_json_output.json"
+          }
+        ]
+      },
+      {
+        "description": "",
+        "vars": {
+          "role_name": "Correspondent",
+          "role_description": "Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station.",
+          "industry_sector": "Radio"
+        },
+        "assert": [
+          {
+            "type": "contains-json",
+            "value": "file://./asserts/expected_json_output.json"
+          }
+        ]
+      },
+      {
+        "description": "",
+        "vars": {
+          "role_name": "Investigative Journalist",
+          "role_description": "Conducts in-depth investigations for magazine exclusives.",
+          "industry_sector": "Magazines/Publishing"
+        },
+        "assert": [
+          {
+            "type": "contains-json",
+            "value": "file://./asserts/expected_json_output.json"
+          }
+        ]
+      }
+    ],
+    "sharing": true,
+    "extensions": []
+  }
+}

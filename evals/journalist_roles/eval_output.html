@@ -1,0 +1,562 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Translate journalist role</title>
+    <style>
+      body {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-line;
+        vertical-align: top;
+      }
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>industry_sector</th>
+        
+        <th>role_description</th>
+        
+        <th>role_name</th>
+        
+        <th>[ollama:completion:llama3.1:8b-instruct-q6_K] Translate professional role from English "{{role_name}}" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}
+Return only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.
+Example output in JSON format:
+```json {
+  "english": "reporter",
+  "spanish": "reportero",
+  "french": "reporter",
+  "german": "Reporter",
+  "polish": "reporter"
+} ```
+Output:</th>
+        
+        <th>[ollama:completion:mistral-nemo:12b-instruct-2407-q6_K] Translate professional role from English "{{role_name}}" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}
+Return only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.
+Example output in JSON format:
+```json {
+  "english": "reporter",
+  "spanish": "reportero",
+  "french": "reporter",
+  "german": "Reporter",
+  "polish": "reporter"
+} ```
+Output:</th>
+        
+        <th>[openai:chat:gpt-4o-mini] Translate professional role from English "{{role_name}}" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}
+Return only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.
+Example output in JSON format:
+```json {
+  "english": "reporter",
+  "spanish": "reportero",
+  "french": "reporter",
+  "german": "Reporter",
+  "polish": "reporter"
+} ```
+Output:</th>
+        
+        <th>[openai:chat:gpt-4o-2024-08-06] Translate professional role from English "{{role_name}}" to Spanish, French, German and Polish languages based on this role description: {{role_description}} {{role_name}} works in Media Outlet in {{industry_sector}}
+Return only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.
+Example output in JSON format:
+```json {
+  "english": "reporter",
+  "spanish": "reportero",
+  "french": "reporter",
+  "german": "Reporter",
+  "polish": "reporter"
+} ```
+Output:</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="Newspapers">Newspapers</td>
+          
+          <td data-content="Gathers information, conducts interviews, and writes news stories to inform the public on current events.">Gathers information, conducts interviews, and writes news stories to inform the public on current events.</td>
+          
+          <td data-content="Reporter">Reporter</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```
+{
+&quot;english&quot;: &quot;reporter&quot;,
+&quot;spanish&quot;: &quot;periodista&quot;,
+&quot;french&quot;: &quot;journaliste&quot;,
+&quot;german&quot;: &quot;Journalist&quot;,
+&quot;polish&quot;: &quot;reportażysta&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```
+{
+"english": "reporter",
+"spanish": "periodista",
+"french": "journaliste",
+"german": "Journalist",
+"polish": "reportażysta"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```json
+{
+&quot;english&quot;: &quot;reporter&quot;,
+&quot;spanish&quot;: &quot;reportero&quot;,
+&quot;french&quot;: &quot;reporter&quot;,
+&quot;german&quot;: &quot;Reporter&quot;,
+&quot;polish&quot;: &quot;reportażysta&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```json
+{
+"english": "reporter",
+"spanish": "reportero",
+"french": "reporter",
+"german": "Reporter",
+"polish": "reportażysta"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```json
+{
+&quot;english&quot;: &quot;reporter&quot;,
+&quot;spanish&quot;: &quot;reportero&quot;,
+&quot;french&quot;: &quot;reporter&quot;,
+&quot;german&quot;: &quot;Reporter&quot;,
+&quot;polish&quot;: &quot;reporter&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```json
+{
+"english": "reporter",
+"spanish": "reportero",
+"french": "reporter",
+"german": "Reporter",
+"polish": "reporter"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```json
+{
+&quot;english&quot;: &quot;reporter&quot;,
+&quot;spanish&quot;: &quot;reportero&quot;,
+&quot;french&quot;: &quot;reporter&quot;,
+&quot;german&quot;: &quot;Reporter&quot;,
+&quot;polish&quot;: &quot;reporter&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```json
+{
+"english": "reporter",
+"spanish": "reportero",
+"french": "reporter",
+"german": "Reporter",
+"polish": "reporter"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Television">Television</td>
+          
+          <td data-content="Presents the news during broadcast segments.">Presents the news during broadcast segments.</td>
+          
+          <td data-content="News Anchor">News Anchor</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```
+{
+&quot;english&quot;: &quot;News Anchor&quot;,
+&quot;spanish&quot;: &quot;Locutor de Noticias&quot;,
+&quot;french&quot;: &quot;Anchorman d&#39;Actualités&quot;,
+&quot;german&quot;: &quot;Nachrichtensprecher&quot;,
+&quot;polish&quot;: &quot;Komentator Wiadomości&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```
+{
+"english": "News Anchor",
+"spanish": "Locutor de Noticias",
+"french": "Anchorman d'Actualités",
+"german": "Nachrichtensprecher",
+"polish": "Komentator Wiadomości"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```json
+{
+&quot;english&quot;: &quot;News Anchor&quot;,
+&quot;spanish&quot;: &quot;Presentador de Noticias&quot;,
+&quot;french&quot;: &quot;Présentateur de nouvelles&quot;,
+&quot;german&quot;: &quot;Nachrichtensprecher&quot;,
+&quot;polish&quot;: &quot;Prezenter wiadomości&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```json
+{
+"english": "News Anchor",
+"spanish": "Presentador de Noticias",
+"french": "Présentateur de nouvelles",
+"german": "Nachrichtensprecher",
+"polish": "Prezenter wiadomości"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```json
+{
+&quot;english&quot;: &quot;News Anchor&quot;,
+&quot;spanish&quot;: &quot;Presentador de noticias&quot;,
+&quot;french&quot;: &quot;Présentateur de nouvelles&quot;,
+&quot;german&quot;: &quot;Nachrichtensprecher&quot;,
+&quot;polish&quot;: &quot;Prezenter wiadomości&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```json
+{
+"english": "News Anchor",
+"spanish": "Presentador de noticias",
+"french": "Présentateur de nouvelles",
+"german": "Nachrichtensprecher",
+"polish": "Prezenter wiadomości"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```json
+{
+&quot;english&quot;: &quot;news anchor&quot;,
+&quot;spanish&quot;: &quot;presentador de noticias&quot;,
+&quot;french&quot;: &quot;présentateur de nouvelles&quot;,
+&quot;german&quot;: &quot;Nachrichtensprecher&quot;,
+&quot;polish&quot;: &quot;prezenter wiadomości&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```json
+{
+"english": "news anchor",
+"spanish": "presentador de noticias",
+"french": "présentateur de nouvelles",
+"german": "Nachrichtensprecher",
+"polish": "prezenter wiadomości"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Radio">Radio</td>
+          
+          <td data-content="Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station.">Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station.</td>
+          
+          <td data-content="Correspondent">Correspondent</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```
+{
+&quot;english&quot;: &quot;Correspondent&quot;,
+&quot;spanish&quot;: &quot;Corresponsal&quot;,
+&quot;french&quot;: &quot;Correspondant&quot;,
+&quot;german&quot;: &quot;Korrespondent&quot;,
+&quot;polish&quot;: &quot;Korespondent&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```
+{
+"english": "Correspondent",
+"spanish": "Corresponsal",
+"french": "Correspondant",
+"german": "Korrespondent",
+"polish": "Korespondent"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```json
+{
+&quot;english&quot;: &quot;correspondent&quot;,
+&quot;spanish&quot;: &quot;corresponsal&quot;,
+&quot;french&quot;: &quot;correspondant&quot;,
+&quot;german&quot;: &quot;Korrespondent&quot;,
+&quot;polish&quot;: &quot;korespondent&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```json
+{
+"english": "correspondent",
+"spanish": "corresponsal",
+"french": "correspondant",
+"german": "Korrespondent",
+"polish": "korespondent"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```json
+{
+&quot;english&quot;: &quot;correspondent&quot;,
+&quot;spanish&quot;: &quot;corresponsal&quot;,
+&quot;french&quot;: &quot;correspondant&quot;,
+&quot;german&quot;: &quot;Korrespondent&quot;,
+&quot;polish&quot;: &quot;korespondent&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```json
+{
+"english": "correspondent",
+"spanish": "corresponsal",
+"french": "correspondant",
+"german": "Korrespondent",
+"polish": "korespondent"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```json
+{
+&quot;english&quot;: &quot;correspondent&quot;,
+&quot;spanish&quot;: &quot;corresponsal&quot;,
+&quot;french&quot;: &quot;correspondant&quot;,
+&quot;german&quot;: &quot;Korrespondent&quot;,
+&quot;polish&quot;: &quot;korespondent&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```json
+{
+"english": "correspondent",
+"spanish": "corresponsal",
+"french": "correspondant",
+"german": "Korrespondent",
+"polish": "korespondent"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Magazines/Publishing">Magazines/Publishing</td>
+          
+          <td data-content="Conducts in-depth investigations for magazine exclusives.">Conducts in-depth investigations for magazine exclusives.</td>
+          
+          <td data-content="Investigative Journalist">Investigative Journalist</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```
+{
+&quot;english&quot;: &quot;Investigative Journalist&quot;,
+&quot;spanish&quot;: &quot;Periodista Investigativo&quot;,
+&quot;french&quot;: &quot;Journaliste d&#39;investigation&quot;,
+&quot;german&quot;: &quot;Ermittlender Journalist&quot;,
+&quot;polish&quot;: &quot;Dziennikarz śledczy&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```
+{
+"english": "Investigative Journalist",
+"spanish": "Periodista Investigativo",
+"french": "Journaliste d'investigation",
+"german": "Ermittlender Journalist",
+"polish": "Dziennikarz śledczy"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```json
+{
+&quot;english&quot;: &quot;Investigative Journalist&quot;,
+&quot;spanish&quot;: &quot;Periodista de Investigación&quot;,
+&quot;french&quot;: &quot;Journaliste d&#39;investigation&quot;,
+&quot;german&quot;: &quot;Investigativjournalist&quot;,
+&quot;polish&quot;: &quot;Reporter śledczy&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```json
+{
+"english": "Investigative Journalist",
+"spanish": "Periodista de Investigación",
+"french": "Journaliste d'investigation",
+"german": "Investigativjournalist",
+"polish": "Reporter śledczy"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```json
+{
+&quot;english&quot;: &quot;Investigative Journalist&quot;,
+&quot;spanish&quot;: &quot;Periodista de Investigación&quot;,
+&quot;french&quot;: &quot;Journaliste d&#39;Investigation&quot;,
+&quot;german&quot;: &quot;Investigativer Journalist&quot;,
+&quot;polish&quot;: &quot;Dziennikarz Śledczy&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```json
+{
+"english": "Investigative Journalist",
+"spanish": "Periodista de Investigación",
+"french": "Journaliste d'Investigation",
+"german": "Investigativer Journalist",
+"polish": "Dziennikarz Śledczy"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+          <td data-content="[PASS] (1.00)
+
+    ```json
+{
+&quot;english&quot;: &quot;Investigative Journalist&quot;,
+&quot;spanish&quot;: &quot;Periodista de Investigación&quot;,
+&quot;french&quot;: &quot;Journaliste d&#39;Investigation&quot;,
+&quot;german&quot;: &quot;Investigativer Journalist&quot;,
+&quot;polish&quot;: &quot;Dziennikarz Śledczy&quot;
+}
+```
+
+    Pass Reason: All assertions passed">[PASS] (1.00)
+
+    ```json
+{
+"english": "Investigative Journalist",
+"spanish": "Periodista de Investigación",
+"french": "Journaliste d'Investigation",
+"german": "Investigativer Journalist",
+"polish": "Dziennikarz Śledczy"
+}
+```
+
+    Pass Reason: All assertions passed</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>

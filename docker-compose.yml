@@ -1,0 +1,21 @@
+services:
+  promptfoo:
+    build:
+      context: ../promptfoo
+      dockerfile: Dockerfile
+    container_name: promptfoo
+    ports:
+      - "3333:3000"  # Maps host port 3333 to container port 3000
+    env_file:
+      - ./promptfoo.env  # Path to your environment variables file
+    volumes:
+      - data:/root/.promptfoo  # Persistent volume for evals
+      - ./evals:/app/evals
+    #restart: unless-stopped  # Ensures the container restarts automatically unless stopped manually
+
+volumes:
+  data:
+    driver: local
+  evals:
+    driver: local
+

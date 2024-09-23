@@ -1,0 +1,12 @@
+{
+  "required": ["english", "spanish", "french", "german", "polish"],
+  "type": "object",
+  "properties":
+    {
+      "english": {"type": "string"},
+      "spanish": {"type": "string"},
+      "french": {"type": "string"},
+      "german": {"type": "string"},
+      "polish": {"type": "string"}
+    }
+}

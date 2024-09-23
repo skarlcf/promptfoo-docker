@@ -1,0 +1,99 @@
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+description: "Translate journalist role"
+
+prompts:
+  - >-
+    Translate professional role from English "{{role_name}}" to Spanish, French, German and Polish languages based on this role description:
+    {{role_description}}
+    {{role_name}} works in Media Outlet in {{industry_sector}}
+    
+    Return only role name in English and Spanish, French, German and Polish role name translations as JSON, without explanations and justifications.
+    
+    Example output in JSON format:
+
+    ```json
+    {
+      "english": "reporter",
+      "spanish": "reportero",
+      "french": "reporter",
+      "german": "Reporter",
+      "polish": "reporter"
+    }
+    ```
+
+    Output:
+
+providers:
+  - id: "ollama:completion:llama3.1:8b-instruct-q6_K"
+    config:
+      temperature: 0.2
+  - id: "ollama:completion:mistral-nemo:12b-instruct-2407-q6_K"
+    config:
+      temperature: 0.2
+  - id: "ollama:completion:phi3:medium-128k"
+    config:
+      temperature: 0.2
+  - id: "ollama:completion:phi3.5:3.8b-mini-instruct-q5_K_S"
+    config:
+      temperature: 0.2
+  - id: "ollama:completion:gemma2:9b-instruct-q5_K_S"
+    config:
+      temperature: 0.2
+  - id: "ollama:completion:qwen2:7b-instruct-q6_K"
+    config:
+      temperature: 0.2
+  - id: "openai:chat:gpt-4o-mini"
+    config:
+      organization: ''
+      temperature: 0.2
+      max_tokens: 1024
+      top_p: 1
+      frequency_penalty: 0
+      presence_penalty: 0
+  - id: "openai:chat:gpt-4o-2024-08-06"
+    config:
+      organization: ''
+      temperature: 0.2
+      max_tokens: 1024
+      top_p: 1
+      frequency_penalty: 0
+      presence_penalty: 0
+
+tests:
+  - description: ''
+    vars:
+      role_name: Reporter
+      role_description: >-
+        Gathers information, conducts interviews, and writes news stories to
+        inform the public on current events.
+      industry_sector: Newspapers
+    assert:
+      - type: contains-json
+        value: file://./asserts/expected_json_output.json
+  - description: ''
+    vars:
+      role_name: News Anchor
+      role_description: >-
+        Presents the news during broadcast segments.
+      industry_sector: Television
+    assert:
+      - type: contains-json
+        value: file://./asserts/expected_json_output.json
+  - description: ''
+    vars:
+      role_name: Correspondent
+      role_description: >-
+        Journalist stationed in a specific location, often remote or foreign, who reports on news events and developments from that area for a radio station.
+      industry_sector: Radio
+    assert:
+      - type: contains-json
+        value: file://./asserts/expected_json_output.json
+  - description: ''
+    vars:
+      role_name: Investigative Journalist
+      role_description: >-
+        Conducts in-depth investigations for magazine exclusives.
+      industry_sector: Magazines/Publishing
+    assert:
+      - type: contains-json
+        value: file://./asserts/expected_json_output.json
